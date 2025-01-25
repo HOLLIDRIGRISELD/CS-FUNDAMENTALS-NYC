@@ -23,7 +23,7 @@ while user_score < 10 and pc_score < 10:
         print()                                                
     
     #to give the pc a choice we do a random chose for option list with
-    #a tutorial i found online for https://www.youtube.com/watch?v=lCA7Fhgx8g4
+    #a tutorial i found online from https://www.youtube.com/watch?v=lCA7Fhgx8g4
     pc_option = random.choice(option_list)
     print("THE COMPUTER CHOSE : ",  pc_option)
     print()
@@ -52,9 +52,9 @@ else:
 
 
 #create the score.txt file that will contain username,time,user_score,pc_score
-with open("scores.txt", "a") as file:
-    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    file.write(f"{username},{timestamp},{user_score},{pc_score}\n")
+file = open("scores.txt", "a")
+timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+file.write(f"{username},{timestamp},{user_score},{pc_score}\n")
 
 print("Your score has been saved!")
 
