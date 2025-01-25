@@ -26,7 +26,7 @@ for line in lines:
 #convert the dict to a sorted list
 sorted_users = sorted(user_stats.items(),key=lambda x: x[1]["wins"],reverse=True)
 
-#display the top 5 players in a goog looking way
+#display the top 5 players in a good looking way
 print("--- THE TOP 5 PLAYERS ARE!! ---")
 print(f"{'RANK:':<5}{'USERNAME:':<15}{'WINS:':<10}")
 
